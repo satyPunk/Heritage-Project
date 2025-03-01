@@ -14,7 +14,9 @@ app.get("/",(req,res)=>{
 // app.get("/read",(req,res)=>{
 //     res.render("read.ejs")
 // })
-
+app.get("/home",(req,res)=>{
+    res.render("home.ejs");
+})
 app.listen(port,()=>{
     console.log("port open")
 })
