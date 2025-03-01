@@ -1,0 +1,23 @@
+<header class="glass-navbar">
+    <nav>
+      <a href="/" class="logo">
+        <img src="/images/ashoka-chakra.png" alt="Heritage India">
+      </a>
+      
+      <div class="nav-links">
+        <a href="#virtual-tours">Virtual Tours</a>
+        <a href="#timeline">History Timeline</a>
+        <a href="#unesco-sites">UNESCO Sites</a>
+      </div>
+      
+      <div class="auth-section">
+        <% if(user) { %>
+          <div class="user-avatar"></div>
+        <% } else { %>
+          <button class="oauth-btn google-btn">
+            <i class="fab fa-google"></i> Continue with Google
+          </button>
+        <% } %>
+      </div>
+    </nav>
+  </header>
