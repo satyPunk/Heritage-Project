@@ -11,135 +11,104 @@ html, body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  background: #0a192f; /* Dark Blue Background */
+  color: white;
 }
 
 main {
   flex: 1; /* Ensures footer stays at the bottom */
 }
 
-/* ---------- NAVBAR CSS (Original Header Content Intact) ---------- */
-.navbar-logo {
-  padding: 15px;
-  color: #fff;
-}
+/* ---------- NAVBAR STYLING ---------- */
 .navbar-mainbg {
-  background-color: #3586ff;
-  padding: 0px;
-}
-#navbarSupportedContent {
-  overflow: hidden;
-  position: relative;
-}
-#navbarSupportedContent ul {
-  padding: 0px;
-  margin: 0px;
-}
-#navbarSupportedContent ul li a i {
-  margin-right: 10px;
-}
-#navbarSupportedContent li {
-  list-style-type: none;
-  float: left;
-}
-#navbarSupportedContent ul li a {
-  color: rgba(255, 255, 255, 0.5);
-  text-decoration: none;
-  font-size: 15px;
-  display: block;
-  padding: 20px 20px;
-  transition-duration: 0.6s;
-  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  position: relative;
-}
-#navbarSupportedContent > ul > li.active > a {
-  color: #3586ff;
-  background-color: transparent;
-  transition: all 0.7s;
-}
-#navbarSupportedContent a:not(:only-child):after {
-  content: "\f105";
-  position: absolute;
-  right: 20px;
-  top: 10px;
-  font-size: 14px;
-  font-family: "Font Awesome 5 Free";
-  display: inline-block;
-  padding-right: 3px;
-  vertical-align: middle;
-  font-weight: 900;
-  transition: 0.5s;
-}
-#navbarSupportedContent .active > a:not(:only-child):after {
-  transform: rotate(90deg);
+  background-color: #0e4c92; /* Darker Neon Blue */
+  padding: 10px 20px;
 }
 
-/* ---------- FOOTER CSS ---------- */
+.navbar-logo {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar-logo:hover {
+  color: #ffcc00; /* Yellowish hover */
+}
+
+.navbar-nav li a {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  padding: 12px 15px;
+  transition: 0.3s;
+}
+
+.navbar-nav li a:hover {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+.navbar-toggler i {
+  color: white;
+}
+
+/* ---------- FOOTER STYLING ---------- */
 footer {
-  position: relative;
   width: 100%;
-  background: #3586ff;
-  min-height: 100px;
-  padding: 20px 50px;
+  background: #0e4c92;
+  height: 30px;
+  padding: 10px 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
-  overflow: hidden;
+  text-align: center;
+  position: relative;
 }
 
-footer .social_icon,
-footer .menu {
+footer .social_icon {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0;
+  gap: 15px;
+  margin: 15px 0;
 }
 
-footer .social_icon li,
-footer .menu li {
+footer .social_icon li {
   list-style: none;
 }
 
 footer .social_icon li a {
-  font-size: 2em;
-  color: #ccc;
-  margin: 0 10px;
-  display: inline-block;
-  transition: 0.5s;
+  font-size: 1.8em;
+  color: #fff;
+  transition: 0.3s;
 }
+
 footer .social_icon li a:hover {
-  transform: translateY(-15px);
-  color: blue;
+  color: #ffcc00;
+  transform: translateY(-5px);
+}
+
+footer .menu {
+  display: flex;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+footer .menu li {
+  list-style: none;
 }
 
 footer .menu li a {
-  font-size: 1.2em;
-  color: #ccc;
-  margin: 0 10px;
-  display: inline-block;
-  transition: 0.5s;
+  color: white;
   text-decoration: none;
-  opacity: 0.75;
+  font-size: 16px;
+  transition: 0.3s;
 }
+
 footer .menu li a:hover {
-  opacity: 1;
-  color: #fff;
+  color: #ffcc00;
 }
 
-p {
-  color: white;
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  font-size: 1.1em;
-}
-
-.copyright {
-  color: white;
-}
-
-/* ---------- WAVE ANIMATION (Fixes & Improvements) ---------- */
+/* ---------- WAVE ANIMATION ---------- */
 footer .wave {
   position: absolute;
   bottom: 0;
@@ -148,30 +117,8 @@ footer .wave {
   height: 100px;
   background: url("https://i.ibb.co/rZt4Nhg/wave.png");
   background-size: 1000px 100px;
-}
-
-footer .wave#wave1 {
-  z-index: 1000;
-  opacity: 1;
-  animation: animateWave 4s linear infinite;
-}
-
-footer .wave#wave2 {
-  z-index: 999;
   opacity: 0.5;
-  animation: animateWave_02 4s linear infinite;
-}
-
-footer .wave#wave3 {
-  z-index: 1000;
-  opacity: 0.2;
-  animation: animateWave 3s linear infinite;
-}
-
-footer .wave#wave4 {
-  z-index: 999;
-  opacity: 0.7;
-  animation: animateWave_02 3s linear infinite;
+  animation: animateWave 4s linear infinite;
 }
 
 @keyframes animateWave {
@@ -183,11 +130,8 @@ footer .wave#wave4 {
   }
 }
 
-@keyframes animateWave_02 {
-  0% {
-    background-position-x: 0px;
-  }
-  100% {
-    background-position-x: 1000px;
-  }
+/* ---------- COPYRIGHT TEXT ---------- */
+.copyright {
+  color: #ccc;
+  font-size: 14px;
 }
