@@ -139,17 +139,39 @@
 
     <!-- VIDEO GALLERY -->
     <section class="video-gal" id="gal">
-      <div class="container">
-        <h3 class="heading text-center gly mb-3 mb-sm-5">Video Gallery</h3>
+        <div class="container">
+         <br>
+         <h3 class="heading text-center gly mb-3 mb-sm-5">Video Gallery</h3>
+        
         <div class="vid-container">
-          <div class="video"><video src="/Videos/agrav1.mp4" muted></video></div>
-          <div class="video"><video src="/Videos/agrav2.mp4" muted></video></div>
-          <div class="video"><video src="/Videos/agrav3.mp4" muted></video></div>
+ 
+        <div class="video"><video src="Videos\agrav1.mp4" muted></video></div>
+        <div class="video"><video src="Videos\agrav2.mp4" muted></video></div>
+        <div class="video"><video src="Videos\agrav3.mp4" muted></video></div>
+        
         </div>
-        <!-- Popup video section preserved... -->
-      </div>
-    </section>
-
+ 
+        <div class="pop-vid">
+         <span>&times;</span>
+         <video src="Videos\lehv1.mp4" muted autoplay controls></video>
+        </div>
+        </div>
+ 
+ 
+       <!--JS ONLY FOR POP VIDEO-->
+         <script>
+           document.querySelectorAll('.vid-container video').forEach(vid=>{
+             
+             vid.onclick=()=>{
+             document.querySelector('.pop-vid').style.display='block'; 
+             document.querySelector('.pop-vid video').src=vid.getAttribute('src'); 
+             }
+           });
+           document.querySelector('.pop-vid').onclick=()=>{
+             document.querySelector('.pop-vid').style.display='none';
+           }
+         </script>
+        </section>
     <!-- GIF SECTION -->
     <div style="background-color: #ff480018;">
       <div class="gifss">
@@ -159,8 +181,180 @@
 
     <!-- FOOTER -->
     <footer class="footer-content py-3" id="contact">
-      <!-- Full footer content preserved exactly... -->
-    </footer>
+        <div class="container py-md-3">
+          <div class="footer-top text-center">
+            <h2>
+              <a class="navbar-brand pt-3 mb-3" href="index.html">
+                <span class="fa fa-free-code-camp"></span> Explore India
+              </a>
+            </h2>
+          </div>
+          <div class="row footer-top-inner-vv">
+            <div class="col-lg-3 col-sm-6 mt-lg-0 mt-4">
+              <div class="footer-lavi">
+                <h3 class="mb-3 lavi_title">Links</h3>
+                <hr />
+                <ul class="list-info-lavi">
+                  <li>
+                    <a href="#about"
+                      ><span
+                        class="fa fa-angle-double-right"
+                        aria-hidden="true"
+                      ></span>
+                      Our Mission
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#video-gal"
+                      ><span
+                        class="fa fa-angle-double-right"
+                        aria-hidden="true"
+                      ></span>
+                      Latest Tours
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span
+                        class="fa fa-angle-double-right"
+                        aria-hidden="true"
+                      ></span>
+                      Explore
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#contact"
+                      ><span
+                        class="fa fa-angle-double-right"
+                        aria-hidden="true"
+                      ></span>
+                      Find us
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span
+                        class="fa fa-angle-double-right"
+                        aria-hidden="true"
+                      ></span>
+                      Privacy Policy
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mt-lg-0 mt-4">
+              <div class="footer-lavi">
+                <h3 class="mb-3 lavi_title">Navigation</h3>
+                <hr />
+                <ul class="list-info-lavi">
+                  <li>
+                    <a href="index.html"
+                      ><span
+                        class="fa fa-angle-double-right"
+                        aria-hidden="true"
+                      ></span>
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="index.html"
+                      ><span
+                        class="fa fa-angle-double-right"
+                        aria-hidden="true"
+                      ></span>
+                      About Us
+                    </a>
+                  </li>
+                  
+  
+                  <li>
+                    <a href="index.html"
+                      ><span
+                        class="fa fa-angle-double-right"
+                        aria-hidden="true"
+                      ></span>
+                      Contact Us
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mt-lg-0 mt-4">
+              <div class="footer-lavi">
+                <h3 class="mb-3 lavi_title">Customer Care</h3>
+                <hr />
+                <ul class="list-info-lavi">
+                  <li>
+                    <a href="#about"
+                      ><span
+                        class="fa fa-angle-double-right"
+                        aria-hidden="true"
+                      ></span>
+                      Our Mission
+                    </a>
+                  </li>
+                  <li>
+                    <a href=""
+                      ><span
+                        class="fa fa-angle-double-right"
+                        aria-hidden="true"
+                      ></span>
+                      Latest Tours
+                    </a>
+                  </li>
+                  <li>
+                    <span
+                      class="fa fa-angle-double-right"
+                      aria-hidden="true"
+                    ></span>
+                    <a href="#services"> Explore </a>
+                  </li>
+                  <li>
+                    <a href="#contact"
+                      ><span
+                        class="fa fa-angle-double-right"
+                        aria-hidden="true"
+                      ></span>
+                      Find us
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span
+                        class="fa fa-angle-double-right"
+                        aria-hidden="true"
+                      ></span>
+                      Privacy Policy
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mt-lg-0 mt-4">
+              <div class="footer-lavi">
+                <h3 class="mb-3 lavi_title">Contact Us</h3>
+                <hr />
+                <div class="last-vv-contact">
+                  <p>
+                    <a href="mailto:explore@email.com">@explore.com</a>
+                  </p>
+                </div>
+                <div class="last-vv-contact my-2">
+                  <p>+(91) 933 547 6684</p>
+                </div>
+                <div class="last-vv-contact">
+                  <p>
+                    185, Holy Church Street <br />
+                    Lucknow.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //footer bottom -->
+      </footer>
 
     <!-- COPYRIGHT -->
     <div class="copy-right-top">
