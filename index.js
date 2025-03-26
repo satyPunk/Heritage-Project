@@ -21,7 +21,7 @@ app.get("/booking",(req,res)=>{
     res.render("booking.ejs");
 })
 app.get("/booking/agra",(req,res)=>{
-    res.render("contact.ejs");
+    res.render("agra.ejs");
 })
 app.get("/meow",(req,res)=>{
     res.render("meow.ejs");
