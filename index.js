@@ -20,6 +20,13 @@ app.get("/home",(req,res)=>{
 app.get("/booking",(req,res)=>{
     res.render("booking.ejs");
 })
+app.get("/booking/agra",(req,res)=>{
+    res.render("contact.ejs");
+})
+app.get("/meow",(req,res)=>{
+    res.render("meow.ejs");
+})
+
 app.listen(port,()=>{
     console.log("port open")
 })
