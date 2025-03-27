@@ -17,6 +17,9 @@ app.get("/booking",(req,res)=>{
 app.get("/booking/agra",(req,res)=>{
     res.render("agra.ejs");
 })
+app.get("/booking/ajanta",(req,res)=>{
+    res.render("ajanta.ejs");
+})
 app.get("/meow",(req,res)=>{
     res.render("meow.ejs");
 })
