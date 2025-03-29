@@ -6,7 +6,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine", "ejs");
 app.use(express.static("public"))
 app.get("/",(req,res)=>{
-    res.render("meow.ejs");
+    res.render("index.ejs");
 })
 app.get("/home",(req,res)=>{
     res.render("home.ejs");
