@@ -5,6 +5,7 @@
     list-style-type: none;
     text-decoration: none;
 }
+.slide_1 
 nav
 .container {
     max-width: 1170px;
@@ -216,7 +217,7 @@ section#slides_parent {
 }
 
 .slide_1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/elements/images/recipe_slides/i1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/images/cg/2fe5293bd14c03aca574c7e15ef1ab7e.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -239,29 +240,28 @@ section#slides_parent {
     bottom: 20px;
     font-size: 22px;
 }
-
 .slide_2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/elements/images/recipe_slides/i2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/images/cg/fb7266a74564b46258c3d0d05ba658ec.jpg);
 }
 
 .slide_3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/elements/images/recipe_slides/i3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/images/cg/e17bd30f77d625bc1bb56ef523d0bdee.jpg);
 }
 
 .slide_4 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/elements/images/recipe_slides/i4.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/images/cg/309237ad6ad6e1d9b5c23c841346d75d.jpg);
 }
 
 .slide_5 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/elements/images/recipe_slides/i5.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/images/cg/3152882a3bb99cc7c659b584207ac361.jpg);
 }
 
 .slide_6 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/elements/images/recipe_slides/i6.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/images/cg/a3f877ae55ad3978a594b54146432340.jpg);
 }
 
 .slide_7 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/elements/images/recipe_slides/i7.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/images/cg/f8a7928e09f102df667488f73b0217fa.jpg);
 }
 
 .slide_info {
