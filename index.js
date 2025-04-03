@@ -9,7 +9,7 @@ app.get("/",(req,res)=>{
     res.render("index.ejs");
 })
 app.get("/home",(req,res)=>{
-    res.render("home.ejs");
+    res.render("mainpat.ejs");
 })
 app.get("/booking",(req,res)=>{
     res.render("index.ejs");
