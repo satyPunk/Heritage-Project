@@ -14,11 +14,11 @@ app.get("/home",(req,res)=>{
 app.get("/booking",(req,res)=>{
     res.render("index.ejs");
 })
-app.get("/booking/agra",(req,res)=>{
-    res.render("agra.ejs");
+app.get("/booking/sirpur",(req,res)=>{
+    res.render("sirpur.ejs");
 })
-app.get("/booking/ajanta",(req,res)=>{
-    res.render("ajanta.ejs");
+app.get("/booking/maipat",(req,res)=>{
+    res.render("mainpat.ejs");
 })
 app.get("/meow",(req,res)=>{
     res.render("meow.ejs");
